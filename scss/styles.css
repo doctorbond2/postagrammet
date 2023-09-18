@@ -1,0 +1,140 @@
+.profile-picture {
+  height: 80%;
+  width: 100%;
+  border-radius: 50%;
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-wrapper {
+  display: grid;
+}
+
+.main-header {
+  height: 46px;
+  width: 100%;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  justify-content: space-between;
+  z-index: 20;
+}
+.main-header a {
+  display: inherit;
+  height: 100%;
+  width: 12vw;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.9vw;
+}
+.main-header .header-icon {
+  height: 50%;
+}
+
+.nav-list {
+  display: none;
+}
+
+.table-main {
+  display: grid;
+  height: 800px;
+  width: 80%;
+  margin-left: 20%;
+  grid-template: repeat(auto-fill, minmax(1fr, 1fr));
+  border-style: solid;
+  grid-row-gap: 20px;
+  gap: 20px;
+}
+
+.row-grid-main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  font-weight: bold;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-bottom: 2px solid black;
+}
+
+.row-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  border-bottom: 2px solid black;
+}
+
+.grid-wrap {
+  width: 100px;
+  height: 100px;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.head-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.cell-picture {
+  padding: 5px;
+}
+.cell-picture::before {
+  content: "";
+  background-image: url("/images/profile-pictures/1ai-jenny.jpeg");
+  background-size: contain;
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .flex-body {
+    display: flex;
+    height: 100vw;
+  }
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    height: 100%;
+    width: 250px;
+    background-color: rgb(240, 240, 240);
+    z-index: 200000000000000000000000000;
+  }
+  .main-header a {
+    display: none;
+  }
+  .main-header .header-icon {
+    display: none;
+  }
+  h1 {
+    font-size: 1.5rem;
+    padding: 2vw;
+    align-self: start;
+  }
+  .nav-list {
+    align-self: left;
+    display: block;
+    margin-top: 1vw;
+  }
+  .nav-list ul {
+    list-style: none;
+  }
+  .nav-list li {
+    margin-left: 3em;
+    padding: 1.2vw;
+  }
+  .table-main {
+    margin-top: 2vw;
+    width: 770px;
+  }
+}/*# sourceMappingURL=styles.css.map */

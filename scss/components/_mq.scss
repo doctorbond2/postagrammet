@@ -1,0 +1,32 @@
+@use '../abstracts/' as a;
+@use 'mixins' as mixins;
+
+@media (min-width: a.$mobile-s) {
+
+}
+
+@media (min-width: a.$mobile-m) {
+
+}
+
+@media (min-width: a.$mobile-l) {
+
+}
+
+@media (min-width: a.$tablet) {
+
+}
+
+@media (min-width: a.$laptop) {
+
+  @include mixins.pc-header-mq;
+
+}
+
+@media (min-width: a.$laptop-l) {
+
+}
+
+@media (min-width: a.$laptop-xl) {
+  
+}

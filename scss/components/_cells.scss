@@ -1,0 +1,23 @@
+@use '../abstracts/' as a;
+@use 'mixins' as mixins;
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+
+}
+
+.head-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.cell-picture {
+  @include mixins.profile("/images/profile-pictures/1ai-jenny.jpeg");
+  padding: 5px;
+}
+

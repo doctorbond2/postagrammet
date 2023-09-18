@@ -1,0 +1,67 @@
+@use '../abstracts/' as a;
+
+@mixin pc-header-mq {
+
+  .flex-body {
+    display: flex;
+    height: 100vw;
+  }
+  
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    height: 100%;
+    width: 250px;
+    background-color: rgb(240, 240, 240);
+    z-index: 200000000000000000000000000;
+  
+    a {
+      display: none;
+    }
+    .header-icon {
+      display: none;
+    }
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    padding: 2vw;
+    align-self: start;
+
+  }
+  .nav-list {
+
+    align-self: left;
+    display: block;
+    margin-top: 1vw;
+
+    ul {
+      list-style: none;
+    }
+    li {
+      margin-left: 3em;
+      padding: 1.2vw;
+    }
+  }
+
+  .table-main {
+    margin-top: 2vw;
+    width: 770px;
+  }
+}
+
+@mixin profile($url)
+ {
+  &::before {
+    content: '';
+    background-image: url($url);
+    background-size: contain;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+
+  }
+}
+
